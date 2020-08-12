@@ -562,16 +562,16 @@ button:hover {
     width: 44px;
     height: 44px;
     
+    
     border-radius: 50%;
     box-sizing: border-box;
 
-    background-color: blue;
+    background-color: #FFFFFF;
 
 }
 
 .button-icon :hover {
-    background-color: var(--accent-color) ;
-    fill: #FFFFFF;
+    color: var(--accent-color);
 }
 
 .button-icon-footer {
@@ -592,6 +592,9 @@ button:hover {
 .icon-mail {
     width: 16px;
     height: 11px;
+
+    margin-right: 10px;
+    
 }
 
 .icon-mail .icon-phone :hover {
@@ -601,6 +604,8 @@ button:hover {
 .icon-phone {
     width: 10px;
     height: 15px;
+
+    margin-right: 10px;
 }
 
 .client-logo1 {
