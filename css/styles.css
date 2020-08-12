@@ -318,62 +318,27 @@ body {
     
 }
 
-.client-title::before {
-    display: block;
-    content: "";
-    
-    height: 90px;
-    border-radius: 4px;
-    
-    border: 1px solid #AFB1B8;
-
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.client-title:nth-child(1)::before {
-    background-image: url(../img/logo\ 1.png);
-}
-
-.client-title:nth-child(2)::before {
-    background-image: url(../img/logo\ 2.png);
-}
-
-.client-title:nth-child(3)::before {
-    background-image: url(../img/logo3.png);
-}
-
-.client-title:nth-child(4)::before {
-    background-image: url(../img/logo\ 4.png);
-}
-
-.client-title:nth-child(5)::before {
-    background-image: url(../img/logo\ 5.png);
-}
-
-.client-title:nth-child(6)::before {
-    background-image: url(../img/logo6\ .png);
+.client-title:not(:last-child) {
+    margin-right: 30px;
 }
 
 .client-element {
     display: flex;
     flex-wrap: wrap;
-
-
     margin: 0 0 20px;
 }
-.client-title:not(:last-child) {
-    margin-right: 30px;
-}
 
-.client-title :hover {
-    color: var(--accent-color);
+
+.client-element .client-title :hover {
+    border: 1px solid var(--accent-color);
 }
 
 .client-title {
     width: 170px;  
-
+    height: 90px;
+    border: 1px solid#AFB1B8;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .team {
@@ -591,7 +556,7 @@ button:hover {
     
     
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     
 }
 
@@ -625,4 +590,34 @@ button:hover {
 .icon-phone {
     width: 10px;
     height: 15px;
+}
+
+.client-logo1 {
+    width: 44px;
+    height: 49px;
+}
+
+.client-logo2 {
+    width: 40px;
+    height: 52px;
+}
+
+.client-logo3 {
+    width: 41px;
+    height: 42px;
+}
+
+.client-logo4 {
+    width: 79px;
+    height: 42px;
+}
+
+.client-logo5 {
+    width: 59px;
+    height: 47px;
+}
+
+.client-logo6 {
+    width: 88px;
+    height: 45px;
 }
