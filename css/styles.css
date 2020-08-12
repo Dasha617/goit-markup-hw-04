@@ -128,17 +128,6 @@ body {
     margin-right: 50px;
 }
 
-.mail-pick ::before{
-    content: "";
-    background-image: url(../img/envelope\ .png);
-}
-
-.phone-pick ::before{
-    display: block;
-    content: "";
-    background-image: url(../img/phone.png);
-}
-
 
 .mail-nav {
     display: flex;
@@ -147,6 +136,15 @@ body {
     margin-right: 0px;
 
     box-sizing: border-box;
+}
+
+.main :hover{
+    color: var(--accent-color);
+}
+
+.phone {
+    color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .heading {
@@ -329,8 +327,17 @@ body {
 }
 
 
-.client-element .client-title :hover {
-    border: 1px solid var(--accent-color);
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+
+}
+
+.client-link, .client-title :hover {
+    fill: #2196F3
 }
 
 .client-title {
@@ -339,6 +346,7 @@ body {
     border: 1px solid#AFB1B8;
     border-radius: 4px;
     box-sizing: border-box;
+
 }
 
 .team {
@@ -550,21 +558,24 @@ button:hover {
 }
 
 .button-icon {
+    display: inline-block;
     width: 44px;
     height: 44px;
     
-    
-    
     border-radius: 50%;
-    background: #FFFFFF;
-    
+    box-sizing: border-box;
+
+    background-color: blue;
+
 }
 
 .button-icon :hover {
-    fill: #2196F3;
+    background-color: var(--accent-color) ;
+    fill: #FFFFFF;
 }
 
 .button-icon-footer {
+    display: inline-block;
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -595,16 +606,20 @@ button:hover {
 .client-logo1 {
     width: 44px;
     height: 49px;
+    
+
 }
 
 .client-logo2 {
     width: 40px;
     height: 52px;
+    color: #AFB1B8;
 }
 
 .client-logo3 {
     width: 41px;
     height: 42px;
+    color: #AFB1B8;
 }
 
 .client-logo4 {
