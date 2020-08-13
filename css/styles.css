@@ -71,8 +71,14 @@ body {
 
 }
 
-.mail-nav :hover {
+.mail :hover {
     color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.phone :hover {
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
@@ -92,6 +98,8 @@ body {
 .site-nav {
     display: flex;
     margin-left: 85px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     margin-right: auto;
     
@@ -121,14 +129,6 @@ body {
     color:var(--title-text-color)
 }
 
-.mail {
-    color: var(--title-text-color);
-    text-decoration: none;
-
-    margin-right: 50px;
-}
-
-
 .mail-nav {
     display: flex;
     margin: 0;
@@ -138,14 +138,30 @@ body {
     box-sizing: border-box;
 }
 
-.main :hover{
+.mail {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    margin-right: 50px;
+}
+
+.mail:focus, .mail:hover {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .phone {
+    display: flex;
     color: var(--title-text-color);
     text-decoration: none;
 }
+
+.phone:focus, .phone:hover {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+
 
 .heading {
     margin-top: 0;
@@ -352,7 +368,6 @@ body {
 .team {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .team-element {
@@ -363,12 +378,15 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-    
+  
 }
 
 .team-element:not(:last-child)  {
     margin-right: 30px;   
+}
+
+.photo {
+    display: block;
 }
 
 .button.primary {
@@ -546,47 +564,46 @@ button:hover {
 
 /*соц иконки*/
 
-.social-icon {
-    width: 20px;
-    height: 20px;
-    
+.social-icon {  
     fill: #AFB1B8;
 }
 
-.social-icon :hover {
-    fill: #FFFFFF;;
+.social-icon:hover, .social-icon:focus {
+    fill: #ffffff;
 }
 
 .button-icon {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    
-    
     border-radius: 50%;
-    box-sizing: border-box;
-
-    background-color: #FFFFFF;
-
+    fill: #afb1b8;
 }
 
-.button-icon :hover {
-    color: var(--accent-color);
+.button-icon:hover, .button-icon:focus {
+    background-color: var(--accent-color);
+    fill: #ffffff;
 }
+
+
 
 .button-icon-footer {
-    display: inline-block;
+    display: flex;
     width: 44px;
     height: 44px;
-    margin-right: 10px;
-    
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
     border-radius: 50%;
-    fill: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
 
+    margin-right: 10px;
 }
 
-.button-icon-foote :hover {
-    fill: #2196F3;
+.button-icon-footer:hover, .button-icon-footer:focus {
+    background-color: var(--accent-color);
 }
 
 .icon-mail {
@@ -608,36 +625,7 @@ button:hover {
     margin-right: 10px;
 }
 
-.client-logo1 {
-    width: 44px;
-    height: 49px;
-    
-
-}
-
-.client-logo2 {
-    width: 40px;
-    height: 52px;
+.client-link {
     color: #AFB1B8;
 }
 
-.client-logo3 {
-    width: 41px;
-    height: 42px;
-    color: #AFB1B8;
-}
-
-.client-logo4 {
-    width: 79px;
-    height: 42px;
-}
-
-.client-logo5 {
-    width: 59px;
-    height: 47px;
-}
-
-.client-logo6 {
-    width: 88px;
-    height: 45px;
-}
