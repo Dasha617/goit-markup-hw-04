@@ -366,6 +366,10 @@ body {
 
 }
 
+.client-title:hover, .client-title:focus {
+    fill: #2196f3;
+}
+
 .team {
     display: flex;
     flex-wrap: wrap;
@@ -633,5 +637,9 @@ button:hover {
 
 .client-link {
     color: #AFB1B8;
+}
+
+.client-logo {
+    fill: #AFB1B8;
 }
 
