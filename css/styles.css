@@ -32,7 +32,6 @@ li {
 
 .section {
 
-
 }
 
 /*боди*/
@@ -283,6 +282,28 @@ body {
 
 }
 
+.subject-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    width: 370px;
+    height: 70px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.sub-element {
+    position: relative;
+}
+
 .fon {
     height: 702px;
     max-width: 100%;
@@ -306,13 +327,15 @@ body {
 
 
 
+
+
 /*клиенты*/
 
 .social-icon {
     width: 20px;
     height: 20px;
-
 }
+
 .clients {
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
@@ -337,6 +360,7 @@ body {
 }
 
 
+
 .client-element {
     display: flex;
     flex-wrap: wrap;
@@ -353,22 +377,27 @@ body {
 
 }
 
-.client-link:hover, .client-link:focus {
-    fill: #2196f3;
-}
-
-
 .client-title {
     width: 170px;  
     height: 90px;
     border: 1px solid#AFB1B8;
     border-radius: 4px;
     box-sizing: border-box;
-}
+} 
 
 .client-title :hover {
     color: var(--accent-color);
 }
+
+.clients-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+
+}
+
 
 .team {
     display: flex;
@@ -583,16 +612,20 @@ button:hover {
 
 
 .button-icon {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-right: 10px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    
+
     fill: #afb1b8;
 }
 
-.button-icon:hover, .button-icon:focus {
+.button-icon:hover {
     background-color: var(--accent-color);
     fill: #ffffff;
 }
@@ -640,7 +673,7 @@ button:hover {
 }
 
 .client-link :hover {
-    color: var(--accent-color);
+    fill: #2196F3;
 }
 
 .client-logo {
