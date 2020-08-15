@@ -179,7 +179,7 @@ body {
 }
 .pickcha {
     height: 600px;
-    max-width: 1600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -285,7 +285,7 @@ body {
 
 .fon {
     height: 702px;
-    max-width: 1600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: #F5F4FA;
@@ -353,9 +353,10 @@ body {
 
 }
 
-.client-link, .client-title :hover {
-    fill: #2196F3
+.client-link:hover, .client-link:focus {
+    fill: #2196f3;
 }
+
 
 .client-title {
     width: 170px;  
@@ -363,11 +364,10 @@ body {
     border: 1px solid#AFB1B8;
     border-radius: 4px;
     box-sizing: border-box;
-
 }
 
-.client-title:hover, .client-title:focus {
-    fill: #2196f3;
+.client-title :hover {
+    color: var(--accent-color);
 }
 
 .team {
@@ -383,7 +383,7 @@ body {
     
     width: 270px;
     height: 428px;
-    background-color: var(--main-background-color);
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   
@@ -562,7 +562,7 @@ button:hover {
 }
 .fon-footer {
     
-    width: 1600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -637,6 +637,10 @@ button:hover {
 
 .client-link {
     color: #AFB1B8;
+}
+
+.client-link :hover {
+    color: var(--accent-color);
 }
 
 .client-logo {
