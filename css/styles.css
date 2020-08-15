@@ -655,6 +655,7 @@ button:hover {
 
     margin-right: 10px;
     
+    fill: #757575;
 }
 
 .icon-mail .icon-phone :hover {
@@ -666,6 +667,8 @@ button:hover {
     height: 15px;
 
     margin-right: 10px;
+
+    fill: #757575;
 }
 
 .client-link {
