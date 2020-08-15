@@ -378,6 +378,11 @@ body {
 
 }
 
+.client-link :hover {
+    color: var(--accent-color);
+    border-radius: var(--accent-color);
+}
+
 .client-title {
     width: 170px;  
     height: 90px;
@@ -386,10 +391,7 @@ body {
     box-sizing: border-box;
 } 
 
-.client-link :hover {
-    color: var(--accent-color);
-    border-radius: var(--accent-color);
-}
+
 
 .clients-social {
     display: flex;
