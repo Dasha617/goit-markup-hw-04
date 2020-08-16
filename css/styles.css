@@ -381,9 +381,10 @@ body {
    
 }
 
-
-.client-link:hover, .client-logo:hover {
+.client-link:hover  {
     border-color: #2196F3;
+}
+.client-link:hover .client-logo {
     fill: #2196F3;
 }
 
@@ -670,7 +671,11 @@ button:hover {
 }
 
 .button-icon:hover, .button-icon:focus {
-    background-color: var(--accent-color);
+    background-color: #2196F3;
+}
+
+.button-icon:hover .social-icon {
+    fill: #FFFFFF;
 }
 
 .icon-mail {
