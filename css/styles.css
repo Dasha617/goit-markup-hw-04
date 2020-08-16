@@ -381,8 +381,9 @@ body {
    
 }
 
-.client-link:hover {
+.client-link:hover, .client-logo:hover {
     border-color: #2196F3;
+    fill: #2196F3;
 }
 
 .client-title {
@@ -530,6 +531,7 @@ button:hover {
     padding: 63px 24px;
 
 }
+
 
 .technokryk-text {
     font-weight: 400;
@@ -691,11 +693,6 @@ button:hover {
 
 .client-link {
     color: #AFB1B8;
-}
-
-.client-link :hover {
-    fill: #2196F3;
-    border-radius: var(--accent-color);
 }
 
 .client-logo {
