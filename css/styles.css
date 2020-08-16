@@ -381,7 +381,7 @@ body {
    
 }
 
-.client-link :hover {
+.client-link:hover {
     border-color: #2196F3;
 }
 
